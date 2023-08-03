@@ -149,7 +149,6 @@ module.exports = defineConfig({
     "prefer-spread": "error",
     "prefer-template": "error",
     "no-redeclare": "off",
-    "@typescript-eslint/no-redeclare": "error",
 
     // best-practice
     "array-callback-return": "error",
@@ -172,6 +171,7 @@ module.exports = defineConfig({
 
     // ts
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
@@ -210,6 +210,8 @@ module.exports = defineConfig({
     "import/no-named-as-default-member": "off",
     "import/named": "off",
     "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
 
     // eslint-plugin-eslint-comments
     "eslint-comments/disable-enable-pair": ["error", { allowWholeFile: true }],
