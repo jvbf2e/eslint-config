@@ -177,7 +177,11 @@ module.exports = defineConfig({
     "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
     "@typescript-eslint/consistent-type-imports": [
       "error",
-      { disallowTypeAnnotations: false },
+      {
+        prefer: "type-imports",
+        disallowTypeAnnotations: true,
+        fixStyle: "separate-type-imports",
+      },
     ],
     "@typescript-eslint/ban-ts-comment": ["off", { "ts-ignore": false }],
 
@@ -188,6 +192,7 @@ module.exports = defineConfig({
       "error",
       {
         groups: [
+          "type",
           "builtin",
           "external",
           "internal",
@@ -195,26 +200,7 @@ module.exports = defineConfig({
           "sibling",
           "index",
           "object",
-          "type",
         ],
-
-        pathGroups: [
-          {
-            pattern: "vue",
-            group: "external",
-            position: "before",
-          },
-          {
-            pattern: "@vue/**",
-            group: "external",
-            position: "before",
-          },
-          {
-            pattern: "@element-plus/**",
-            group: "internal",
-          },
-        ],
-        pathGroupsExcludedImportTypes: ["type"],
       },
     ],
     "import/no-unresolved": "off",
