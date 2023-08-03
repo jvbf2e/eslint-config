@@ -11,14 +11,6 @@ module.exports = defineConfig({
     "plugin:markdown/recommended",
     "plugin:@typescript-eslint/recommended",
   ],
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: "latest",
-    sourceType: "module",
-  },
   // 指定插件
   plugins: ["@typescript-eslint", "unicorn"],
   settings: {
@@ -134,7 +126,7 @@ module.exports = defineConfig({
     "no-empty": ["error", { allowEmptyCatch: true }],
     "no-unused-expressions": [
       "error",
-      { allowShortCircuit: true, allowTernary: true },
+      { allowShortCircuit: true, allowTernary: true, enforceForJSX: true },
     ],
     "prefer-const": [
       "warn",
