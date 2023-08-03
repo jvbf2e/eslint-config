@@ -1,7 +1,7 @@
 {
   "name": "@jvbjs/eslint-config",
-  "version": "1.0.1",
-  "description": "ESLint configuration for JS projects based on airbnb and Prettier configs",
+  "version": "1.0.3",
+  "description": "ESLint config",
   "main": "index.js",
   "exports": {
     ".": "./index.js",
@@ -17,10 +17,8 @@
     "url": "https://github.com/jvbf2e/eslint-config.git"
   },
   "keywords": [
-    "javascript",
     "eslint",
     "eslint-config",
-    "airbnb-config",
     "prettier-config"
   ],
   "author": "luyj <vvimoink@gmail.com>",
@@ -30,14 +28,12 @@
   },
   "files": [
     "LICENSE",
-    "define.js",
+    "default.js",
     "index.js",
     "react.js",
     "vue.js"
   ],
-  "scripts": {
-    "commit": "git-cz"
-  },
+  "scripts": {},
   "dependencies": {
     "@jvbjs/prettier-config": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
@@ -64,16 +60,5 @@
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-vue": "^9.15.1",
     "typescript": "^5.1.6"
-  },
-  "config": {
-    "commitizen": {
-      "path": "../../node_modules/cz-customizable"
-    }
-  },
-  "lint-staged": {
-    "*.{vue,js,ts,jsx,tsx,json}": "eslint --fix",
-    "*.md": [
-      "prettier --write"
-    ]
   }
 }
