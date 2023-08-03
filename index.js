@@ -132,6 +132,7 @@ module.exports = defineConfig({
     "no-return-await": "error",
     "no-var": "error",
     "no-empty": ["error", { allowEmptyCatch: true }],
+    "no-unused-expressions": ["error", { allowAfterThis: true }],
     "prefer-const": [
       "warn",
       { destructuring: "all", ignoreReadBeforeAssign: true },
