@@ -4,7 +4,6 @@ module.exports = defineConfig({
   // 继承其他配置
   extends: [
     require.resolve("./default.js"),
-    "eslint-config-airbnb-base",
     "plugin:import/recommended",
     "plugin:eslint-comments/recommended",
     "plugin:jsonc/recommended-with-jsonc",

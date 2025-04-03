@@ -1,6 +1,6 @@
 {
   "name": "@jvbjs/eslint-config",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "ESLint config",
   "main": "index.js",
   "exports": {
@@ -35,30 +35,23 @@
   ],
   "scripts": {},
   "dependencies": {
-    "@jvbjs/prettier-config": "^1.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-define-config": "^1.21.0",
+    "@jvbjs/prettier-config": "^1.0.5",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-define-config": "^2.1.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsonc": "^2.9.0",
-    "eslint-plugin-markdown": "^3.0.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-unicorn": "^43.0.2",
-    "jsonc-eslint-parser": "^2.3.0"
-  },
-  "peerDependencies": {
-    "eslint": "^8.45.0",
-    "eslint-plugin-react": "^7.33.0",
-    "prettier": "^2.0.0",
-    "typescript": "*"
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsonc": "^2.20.0",
+    "eslint-plugin-markdown": "^5.1.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-unicorn": "^58.0.0",
+    "jsonc-eslint-parser": "^2.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.45.0",
-    "eslint-plugin-react": "^7.33.0",
-    "eslint-plugin-vue": "^9.15.1",
-    "typescript": "^5.1.6"
+    "eslint": "^9.23.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-vue": "^10.0.0",
+    "typescript": "^5.8.2"
   }
 }
